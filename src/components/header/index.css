@@ -14,7 +14,7 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin: 4rem 10rem 3rem 10rem;
+    padding: 4rem 10rem 3rem 10rem;
     font-weight: 400; 
     font-size: 24px;
     color: #FFFFFF;
@@ -22,8 +22,11 @@
   
   label {
     position: relative;
-    top: 1.45rem;
+    top: 1.4rem;
     left: 2rem;
+
+    width: 1.6rem;
+    height: 1.6rem;
   }
   .searchInput{
     display: flex;
@@ -50,4 +53,45 @@
     font-weight: 500;
     font-size: 1.2rem;
     color: rgba(255, 255, 255, 0.5);
+  }
+
+  @media (max-width: 978px){
+    .headerInfo{
+      font-size: 22px;
+      
+    padding: 4rem 5rem 3rem 5rem;
+    }
+  }
+  @media (max-width: 607px){
+    .headerInfo{
+    padding: 4rem 3rem 3rem 3rem;
+    }
+    .searchInput > input{
+      height: 3rem;
+    }
+
+    label{
+      top: 0.8rem;
+      left: 2rem;
+
+      width: 1.4rem;
+      height: 1.4rem;
+    }
+  }
+  @media (max-width: 414px){
+    .headerInfo{
+      font-size: 20px;
+    }
+
+    .searchInput > input{
+      height: 2.6rem;
+    }
+
+    label{
+      top: 0.8rem;
+      left: 2rem;
+
+      width: 1.04rem;
+      height: 1.04rem;
+    }
   }

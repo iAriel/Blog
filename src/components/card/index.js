@@ -7,7 +7,7 @@ export default function Card(props) {
             <div className="post">
                 <div className="postDetails">
                     <span className="postDate">{props.date}</span>
-                    <img src={Heart} />
+                    <img className="heartIcon" src={Heart} alt="Heart icon"/>
                 </div>
                 <div className="cardContent">
                     <p className="titlePost">{props.title}</p>
